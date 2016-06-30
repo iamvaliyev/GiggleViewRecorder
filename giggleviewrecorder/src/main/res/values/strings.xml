@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GiggleViewRecorder</string>
+
+    <string name="shortcut_name">Launch</string>
+    <string name="clear">Clear</string>
+    <string name="record">Record</string>
+    <string name="countdown_one">1…</string>
+    <string name="countdown_two">2…</string>
+    <string name="countdown_three">3…</string>
+    <string name="launch_overlay">Launch Overlay</string>
+    <string name="preferences">Preferences</string>
+    <string name="countdown">Three second countdown</string>
+    <string name="recents_hide">Hide from recent apps</string>
+    <string name="video_size_percentage">Video size</string>
+    <string name="notification_captured_title">Screen recording captured.</string>
+    <string name="notification_captured_subtitle">Touch to view your screen recording.</string>
+    <string name="notification_captured_share">Share</string>
+    <string name="notification_captured_delete">Delete</string>
+    <string name="notification_recording_title">Recording screen.</string>
+    <string name="notification_recording_subtitle">Touch the clock area to stop recording.</string>
+    <string name="recording_notification">Recording Notification</string>
+    <string name="show_touches">Show Touches</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
