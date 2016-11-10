@@ -14,11 +14,14 @@ dependencies{
 ```
 
 ####
+
+
+    CaptureHelper captureHelper = new CaptureHelper(this);
     RecorderSettings recorderSettings = new RecorderSettings(view);
     recorderSettings.setWithDuration(true);
     recorderSettings.setDuration(10);
 
-    captureHelper.startRecordView((BaseApplication) getApplication(), recorderSettings, new RecordingSession.Listener() {
+    captureHelper.startRecordView(getApplication(), recorderSettings, new RecordingSession.Listener() {
     
                         @Override
                         public void onStart() {}
