@@ -19,29 +19,19 @@ dependencies{
     recorderSettings.setDuration(10);
 
     captureHelper.startRecordView((BaseApplication) getApplication(), recorderSettings, new RecordingSession.Listener() {
+    
                         @Override
-                        public void onStart() {
-                            ColorDrawable[] color = {new ColorDrawable(Color.BLUE), new ColorDrawable(Color.RED)};
-
-                            TransitionDrawable trans = new TransitionDrawable(color);
-                            view.setBackgroundDrawable(trans);
-                            trans.startTransition(10000);
-                        }
+                        public void onStart() {}
 
                         @Override
-                        public void onStop() {
-
-                        }
+                        public void onStop() {}
 
                         @Override
-                        public void onError(String error) {
-
-                        }
+                        public void onError(String error) {}
 
                         @Override
-                        public void onEnd(String path) {
-
-                        }
+                        public void onEnd(String path) {}
+                        
                     });
 ####
 
