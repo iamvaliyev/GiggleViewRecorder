@@ -13,6 +13,34 @@ dependencies{
 }
 ```
 
+####
+                    RecorderSettings recorderSettings = new RecorderSettings(view);
+                    recorderSettings.setWithDuration(true);
+                    recorderSettings.setDuration(10);
+
+                    captureHelper.startRecordView((BaseApplication) getApplication(), recorderSettings, new RecordingSession.Listener() {
+                        @Override
+                        public void onStart() {
+                        
+                        }
+
+                        @Override
+                        public void onStop() {
+
+                        }
+
+                        @Override
+                        public void onError(String error) {
+
+                        }
+
+                        @Override
+                        public void onEnd(String path) {
+
+                        }
+                    });
+####
+
 ##Thanks
 *   [Telecine](https://github.com/JakeWharton/Telecine)
 
