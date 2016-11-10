@@ -13,9 +13,7 @@ dependencies{
 }
 ```
 
-####
-
-
+### Record view
     CaptureHelper captureHelper = new CaptureHelper(this);
     RecorderSettings recorderSettings = new RecorderSettings(view);
     recorderSettings.setWithDuration(true);
@@ -36,7 +34,6 @@ dependencies{
                         public void onEnd(String path) {}
                         
                     });
-####
 
 ##Thanks
 *   [Telecine](https://github.com/JakeWharton/Telecine)
