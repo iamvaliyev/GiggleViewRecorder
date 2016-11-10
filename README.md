@@ -14,14 +14,18 @@ dependencies{
 ```
 
 ####
-                    RecorderSettings recorderSettings = new RecorderSettings(view);
-                    recorderSettings.setWithDuration(true);
-                    recorderSettings.setDuration(10);
+    RecorderSettings recorderSettings = new RecorderSettings(view);
+    recorderSettings.setWithDuration(true);
+    recorderSettings.setDuration(10);
 
-                    captureHelper.startRecordView((BaseApplication) getApplication(), recorderSettings, new RecordingSession.Listener() {
+    captureHelper.startRecordView((BaseApplication) getApplication(), recorderSettings, new RecordingSession.Listener() {
                         @Override
                         public void onStart() {
-                        
+                            ColorDrawable[] color = {new ColorDrawable(Color.BLUE), new ColorDrawable(Color.RED)};
+
+                            TransitionDrawable trans = new TransitionDrawable(color);
+                            view.setBackgroundDrawable(trans);
+                            trans.startTransition(10000);
                         }
 
                         @Override
