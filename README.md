@@ -13,6 +13,11 @@ dependencies{
 }
 ```
 
+### Add Application Class to Manifest
+    <application
+        android:name="az.giggle.giggleviewrecorder.manager.BaseApplication"
+        ......... />
+
 ### Record view
     CaptureHelper captureHelper = new CaptureHelper(this);
     RecorderSettings recorderSettings = new RecorderSettings(view);
